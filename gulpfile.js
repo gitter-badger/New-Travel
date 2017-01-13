@@ -58,7 +58,7 @@ gulp.task('watch', ['sass', 'scripts', 'browser-sync'], function() {
 gulp.task('imagemin', function() {
 	return gulp.src('app/img/**/*')
 	.pipe(cache(imagemin()))
-	.pipe(gulp.dest('dist/img')); 
+	.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
@@ -85,9 +85,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
 gulp.task('deploy', function() {
 
 	var conn = ftp.create({
-		host:      'hostname.com',
-		user:      'username',
-		password:  'userpassword',
+		host:      '137.74.93.42',
+		user:      'new-travel',
+		password:  'new-travel',
 		parallel:  10,
 		log: gutil.log
 	});
@@ -97,7 +97,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/path/to/folder/on/server'));
+	.pipe(conn.dest('/'));
 
 });
 
