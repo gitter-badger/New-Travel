@@ -1,13 +1,13 @@
 jQuery(function ($) {
 
-	// Head height detect
-	function heightDetect() {
-		$(".main_head").css("height", $(window).height());
-	};
-	heightDetect();
-	$(window).resize(function() {
-		heightDetect();
-	});
+	// // Head height detect
+	// function heightDetect() {
+	// 	$(".main_head").css("height", $(window).height());
+	// };
+	// heightDetect();
+	// $(window).resize(function() {
+	// 	heightDetect();
+	// });
 	
 	// Top button menu
 	$(".top_mnu_bt").click(function() {
