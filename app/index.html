@@ -106,7 +106,7 @@
 					<nav class="user_mnu">
 						<ul>
 							<li class="icon-help"><a href="#">помощь</a></li>
-							<li class="icon-ticket"><span>1</span><a href="#">мои билеты</a></li>
+							<li class="icon-ticket"><sup>1</sup><a href="#">мои билеты</a></li>
 							<li class="bt_entr"><a href="#">вход</a></li>
 						</ul>
 					</nav>
@@ -115,7 +115,55 @@
 			</div>
 		</div>
 		<h1>New Travel</h1>
-		<p>Покупка билетов на автобус <span>online</span></p>
+		<p>Покупка билетов на автобус <span>online<sup>•</sup></span></p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 h_search_form">
+				<form class="form-horizontal">
+
+					<!-- Select Basic -->
+					<div class="form-group">
+						<div class="col-md-3">
+						  <label class="control-label" for="selectbasic">Откуда?</label>
+						  <br />
+						    <select id="selectbasic" name="selectbasic" class="form-control">
+						      <option>Место отправления</option>
+						      <option>Option one</option>
+						      <option>Option two</option>
+						    </select>
+						</div>
+					
+
+						<div class="col-md-3">
+						  <label class="control-label" for="selectbasic">Куда?</label>
+						  <br />			  
+						    <select id="selectbasic" name="selectbasic" class="form-control">
+						      <option>Место прибытия</option>
+						      <option>Option one</option>
+						      <option>Option two</option>
+						    </select>
+						</div>
+
+						<div class="col-md-3">
+						  <label class="control-label" for="selectbasic">Дата</label>
+						  <br />				  
+						    <input type="date" name="calendar">
+						</div>
+
+						<div class="col-md-3">
+						  <label class="control-label" for="selectbasic">Пассажиров</label>
+						  <br />			  
+						    <select id="selectbasic" name="selectbasic" class="form-control">
+						      <option>1</option>
+						      <option>Option one</option>
+						      <option>Option two</option>
+						    </select>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+		</div>
 	</header>
 	<span class="timer"></b> miles</span>
 

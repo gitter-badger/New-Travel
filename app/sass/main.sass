@@ -134,6 +134,8 @@ a:hover
 		font-family: "ProximaNovaLight"
 		text-align: center
 		margin-top: 170px
+	span 
+		color: #0f96ff
 .logo_container
 	position: relative
 	top: 20px
@@ -182,18 +184,22 @@ a:hover
 		background-color: #0097FF
 		border-radius: 50px
 		box-shadow: 0 0 20px 2px #0f96ff
+		@include transition(all 0.7s ease-in-out)
 	.bt_entr:hover
 			background-color: #0066C2
 			cursor: pointer
 			text-decoration: none
-	span
+			@include transition(all 0.7s ease-in-out)
+	sup
 		padding: 3px 6px
 		background-color: #0f96ff
 		border: 1px solid #0f96ff
 		border-radius: 100%
 		font-size: 11px
-		position: absolute
-		top: 25%
-		margin-left: -7px
+.h_search_form
+	position: relative
+	z-index: 1
+	background-color: #fff
+	height: 240px
 
 @import "media" // Всегда в конце
